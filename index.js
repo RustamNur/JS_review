@@ -55,6 +55,7 @@ Nested Loop
 
   | Bu codeda qanday holat yuz berdi , birinchi loop bolgan 'i' variable
     bir marta yurganda uni ichidagi 'j' variable shartiga ko'ra yurib   
-    chiqadi , qachonki conditionimiz falsy holatga yetib kelganda  
+    chiqadi , qachonki conditionimiz falsy holatga yetib kelganda  parent loop yana iteration shartiga ko'ra 
+    yana yurib chiqadi,bir marta yurganda child loop (inner) yana tamomiyla shartga asoslangan holatda yurib chiqadi
 */
 
