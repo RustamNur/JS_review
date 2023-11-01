@@ -104,7 +104,7 @@ DO/While Loop
         receive the output we need inside another scope. Shadowing can 
         lead to unneeded bugs and results and will be harder to debug 
         when you have many variables.
-
+ 
         That’s why it’s always better to name variables in a more 
         explanatory way, so it describes their purpose. It’s also 
         recommended to keep the code organized and group the variable 
@@ -123,6 +123,10 @@ DO/While Loop
         scope using different keywords, such as let and var. Shadowing 
         can lead to bugs and confusing results, so it’s recommended to 
         use descriptive names for variables and keep them organized.
+
+        Agar bizda allaqachon biron bir o'zgaruvchi bo'lsa va biz uni boshqa doirada shadow qilsak, biz asl o'zgaruvchiga kirish huquqini yo'qotamiz va boshqa doirada kerakli natijani olmaymiz. Shadowing keraksiz xatolar va natijalarga olib kelishi mumkin va sizda ko'p o'zgaruvchilar mavjud bo'lganda disk raskadrovka qilish qiyinroq bo'ladi.
+ 
+Shuning uchun har doim o'zgaruvchilarni ko'proq tushuntiruvchi tarzda nomlash yaxshiroqdir, shuning uchun u ularning maqsadini tavsiflaydi. Shuningdek, kodni tartibli saqlash va o'zgaruvchilar deklaratsiyasini kod bo'ylab tarqatish o'rniga birga guruhlash tavsiya etiladi. Barcha o'zgaruvchilar birgalikda bo'lsa, siz bir xil nomdagi biror narsa yaratayotganingizni sezish osonroq bo'ladi. Xulosa qilib aytadigan bo'lsak, JavaScript-da o'zgaruvchilar soyasini tushunish juda muhim, chunki u doiradagi o'zgaruvchilarning mavjudligi va harakatiga ta'sir qiladi. O'zgaruvchilarning soyasi ichki qamrov tashqi qamrov bilan bir xil nomdagi o'zgaruvchini e'lon qilganda sodir bo'ladi. Bu ichki qamrovning o'zgaruvchisi tashqi ko'lamning o'zgaruvchisini bekor qiladi va uni soya qiladi. Shu bilan birga, bir xil nomdagi ikkita o'zgaruvchilar let va var kabi turli xil kalit so'zlar yordamida bir xil doirada e'lon qilinganda yuzaga keladigan noqonuniy soyaning oldini olish juda muhimdir. Shadowing xatolar va chalkash natijalarga olib kelishi mumkin, shuning uchun o'zgaruvchilar uchun tavsiflovchi nomlardan foydalanish va ularni tartibli saqlash tavsiya etiladi.
 */
 
 
