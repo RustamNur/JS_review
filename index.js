@@ -116,103 +116,119 @@ console.log(user) // {name:"John",age:20}
 
 */
 
-const originalObject = {
-    name: 'John Doe',
-    age: 30,
-    address: {
-      city: 'New York',
-      country: 'USA',
-    },
-  };
+// const originalObject = {
+//     name: 'John Doe',
+//     age: 30,
+//     address: {
+//       city: 'New York',
+//       country: 'USA',
+//     },
+//   };
 
-  const clonedObject = Object.assign({}, originalObject);
-console.log(clonedObject);
+//   const clonedObject = Object.assign({}, originalObject);
+// console.log(clonedObject);
 
-  const clonedObject2 = structuredClone(originalObject)
+//   const clonedObject2 = structuredClone(originalObject)
 
-clonedObject.address.city = "Dallas"
-clonedObject2.address.city = "Texas"
+// clonedObject.address.city = "Dallas"
+// clonedObject2.address.city = "Texas"
 
-console.log(clonedObject);
-console.log(clonedObject2);
-console.log(originalObject);
+// console.log(clonedObject);
+// console.log(clonedObject2);
+// console.log(originalObject);
 
-let schedule = {};
+// let schedule = {};
 
-const isEmpty = () => {
-  for (let i in schedule) {
-    return false;
-  }
-  return true;
-};
+// const isEmpty = () => {
+//   for (let i in schedule) {
+//     return false;
+//   }
+//   return true;
+// };
 
-console.log(isEmpty(schedule)); // true
+// console.log(isEmpty(schedule)); // true
 
-schedule["8:30"] = "get up";
-schedule.time = "gotoschool"
-schedule["get up"] = "8:30"
+// schedule["8:30"] = "get up";
+// schedule.time = "gotoschool"
+// schedule["get up"] = "8:30"
 
-console.log(schedule);
-console.log(isEmpty(schedule)); // false
+// console.log(schedule);
+// console.log(isEmpty(schedule)); // false
 
-let salaries = {
-    John: 100,
-    Ann: 160,
-    Pete: 130
-}
-const sumOFSalaries = () => {
-    let sum = 0;
-    for (let i in salaries) {
-        sum +=salaries[i]
-    }
-    return sum;
-}
+// let salaries = {
+//     John: 100,
+//     Ann: 160,
+//     Pete: 130
+// }
+// const sumOFSalaries = () => {
+//     let sum = 0;
+//     for (let i in salaries) {
+//         sum +=salaries[i]
+//     }
+//     return sum;
+// }
 
-console.log(sumOFSalaries());
+// console.log(sumOFSalaries());
 
-let menu = {
-  width: 200,
-  height: 300,
-  title: "My menu",
-};
+// let menu = {
+//   width: 200,
+//   height: 300,
+//   title: "My menu",
+// };
 
-const multiplyNumeric = (menu) => {
-  for (let i in menu) {
-    if (typeof menu[i] === 'number') {
-      menu[i] *= 2;
-    }
-  }
-  return menu;
-};
+// const multiplyNumeric = (menu) => {
+//   for (let i in menu) {
+//     if (typeof menu[i] === 'number') {
+//       menu[i] *= 2;
+//     }
+//   }
+//   return menu;
+// };
 
-console.log(multiplyNumeric(menu));
-let obj = {
-  name: "Ali",
-  age: 46,
-  child: {
-    name: "Hasan",
-    age: 26,
-    child: {
-      name: "Muhammad",
-      age: 5,
-      child: {
-        name: "Hasan",
-        age: 26,
-        child: {
-          name: "Muhammad",
-          age: 5,
-        },
-      },
-    },
-  },
-};
-let sum = 0;
-while (true) {
-  if (obj) {
-      sum += obj.age;
-      console.log(obj.age);
-  } else break;
-  obj = obj.child;
-}
+// console.log(multiplyNumeric(menu));
+// let obj = {
+//   name: "Ali",
+//   age: 46,
+//   child: {
+//     name: "Hasan",
+//     age: 26,
+//     child: {
+//       name: "Muhammad",
+//       age: 5,
+//       child: {
+//         name: "Hasan",
+//         age: 26,
+//         child: {
+//           name: "Muhammad",
+//           age: 5,
+//         },
+//       },
+//     },
+//   },
+// };
+// let sum = 0;
+// while (true) {
+//   if (obj) {
+//       sum += obj.age;
+//       console.log(obj.age);
+//   } else break;
+//   obj = obj.child;
+// }
 
-console.log(sum);
+// console.log(sum);
+
+// const name = "Ali"
+
+// const greet = () => `hello ${name}`
+
+// const res = greet()
+
+// const bigLetters = name.toUpperCase()
+// console.log(bigLetters);
+// console.log(res);
+
+const ism = 'rustam';
+
+const newName = ism.charAt().toUpperCase() + ism.slice(1).toLowerCase() + 'bek'
+
+console.log(newName);
