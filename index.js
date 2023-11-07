@@ -93,6 +93,17 @@ console.log(worked("John"));
     methods. In particular, they are supported in all browsers and 
     Node.js.
 
+    clearInterval(biriktirilgan variable) va clearTimeout(biriktirilgan 
+    variable) bilan memorydan butunlay remove qilish imkoni bor
+
+    ex:
+    
+    let id = setInterval(()=>{
+    let date = new Date()
+    console.log(`Time: ${getHours()} : $getMinutes()`)
+    },1000);
+
+    clearInterval(id) -> bajarilayotgan hamma a'malni to'htatadi.
      
    ! ************* Curry Function ************
 
@@ -239,27 +250,78 @@ shop.bind(car2,"bad", 120)();
 // };
 // allSum(0)(1)(2)(3)(4)(5);
 
-function shop(how, speed) {
-  console.log(`My car:${this.name} with ${this.color} color is the ${how} and 
-   it's speed is ${speed}km/h`);
-}
-shop();
+// function shop(how, speed) {
+//   console.log(`My car:${this.name} with ${this.color} color is the ${how} and 
+//    it's speed is ${speed}km/h`);
+// }
+// shop();
 
-let car1 = {
-  name: "BMW",
-  color: "blue",
+// let car1 = {
+//   name: "BMW",
+//   color: "blue",
+// };
+// let car2 = {
+//   name: "Volvo",
+//   color: "black",
+// };
+
+// shop.call(car1, "best", 320);
+// shop.call(car2, "bad", 120);
+
+// shop.apply(car1, ["best", 320]);
+// shop.apply(car2, ["bad", 120]);
+
+// let myCar = shop.bind(car1, "best", 320);
+// myCar();
+// shop.bind(car2, "bad", 120)();
+
+// function getData() {
+//   return fetch("https://jsonplaceholder.typicode.com/users").then((res) =>
+//     res.json()
+//   );
+// }
+
+// let usr = {
+//   name: "webbrain",
+//   getData() {
+//     return fetch(`https://jsonplaceholder.typicode.com/${this.name}`).then(
+//       (res) => res.json()
+//     );
+//   },
+// };
+
+// function getCached(func) {
+//   let cache = new Map();
+//   return function (x) {
+//     if (cache.has(x)) {
+//       console.log(cache.get(x));
+//       return cache.get(x);
+//     }
+//     let res = func.call(this);
+//     return cache.set(x, res);
+//   };
+// }
+
+// getData = getCached(getData);
+
+const user = {
+  name: "webbrain",
+  last: "Academy",
+  get fullName() {
+    console.log(this.name, this.last);
+  },
+  set fullName(value) {
+    this.name = value.name;
+    this.last = value.last;
+    console.log(` set console: ${this.name}, ${this.last}`);
+  },
+  
 };
-let car2 = {
-  name: "Volvo",
-  color: "black",
-};
 
-shop.call(car1, "best", 320);
-shop.call(car2, "bad", 120);
-
-shop.apply(car1, ["best", 320]);
-shop.apply(car2, ["bad", 120]);
-
-let myCar = shop.bind(car1, "best", 320);
-myCar();
-shop.bind(car2, "bad", 120)();
+console.log(user.name);
+console.log(user.last);
+// console.log(user.fullName);
+// user.fullName();
+user.fullName
+user.fullName = { name: "NT", last: "Edu" }
+user.fullName
